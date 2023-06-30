@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function AddUser() {
 
@@ -66,8 +66,8 @@ export default function AddUser() {
             <div className='text-center'>
               <button className="btn btn-outline-primary"
                 type="submit">Submit</button>
-              <button className="btn btn-outline-danger mx-2"
-                type="submit">Cancer</button>
+              <Link to={"/users"} className="btn btn-outline-danger mx-2"
+                type="submit">Cancel</Link >
             </div>
           </form>
         </div>
